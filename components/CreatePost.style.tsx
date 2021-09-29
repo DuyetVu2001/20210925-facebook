@@ -12,13 +12,6 @@ export const InputWrapper = styled.View`
 	padding: 10px 16px;
 `;
 
-export const AvatarWrapper = styled.View`
-	width: 42px;
-	height: 42px;
-	border-radius: 36px;
-	overflow: hidden;
-`;
-
 // FIX ASPECT IMAGE
 export const Image = styled.Image`
 	width: 100%;

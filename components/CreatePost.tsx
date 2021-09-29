@@ -1,14 +1,13 @@
 import { AntDesign } from '@expo/vector-icons';
 import React from 'react';
-import { Avatar } from '../assets';
+import { image1 } from '../assets';
+import { Avatar } from '../styles/index.styles';
 import {
 	ActionItem,
 	ActionSeparate,
 	ActionText,
 	ActionWrapper,
-	AvatarWrapper,
 	Container,
-	Image,
 	InputWrapper,
 	Separate,
 	StatusText,
@@ -19,9 +18,7 @@ const CreatePost = () => {
 	return (
 		<Container>
 			<InputWrapper>
-				<AvatarWrapper>
-					<Image source={Avatar}></Image>
-				</AvatarWrapper>
+				<Avatar source={image1}></Avatar>
 
 				<TouchableOpacity activeOpacity={0.6}>
 					<StatusText>What are you thinking?</StatusText>
