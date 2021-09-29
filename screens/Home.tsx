@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from 'react-native';
 import CreatePost from '../components/CreatePost';
+import CreateMeeting from '../components/CreateMeeting';
 import Story from '../components/Story';
 import { Container, Stories } from './Home.style';
 
@@ -10,7 +10,7 @@ const Home = () => {
 	return (
 		<Container>
 			<CreatePost />
-
+			<CreateMeeting />
 			{/* STORIES */}
 			<Stories
 				horizontal
