@@ -3,6 +3,7 @@ import CreatePost from '../components/CreatePost';
 import CreateMeeting from '../components/CreateMeeting';
 import Story from '../components/Story';
 import { Container, Stories } from './Home.style';
+import Post from '../components/Post';
 
 const Home = () => {
 	const data = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -19,6 +20,7 @@ const Home = () => {
 				renderItem={() => <Story />}
 				keyExtractor={(item: any) => item.id}
 			/>
+			<Post />
 		</Container>
 	);
 };
