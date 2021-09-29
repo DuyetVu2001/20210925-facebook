@@ -1,16 +1,20 @@
 import React from 'react';
 import { image1 } from '../assets';
-import { Avatar } from '../styles/index.styles';
-import { AvatarWrapper, Container, Image, Wrapper } from './Story.style';
+import {
+	Container,
+	Image,
+	StoryAvatar,
+	Username,
+	Wrapper,
+} from './Story.style';
 
 export default function Story() {
 	return (
 		<Container>
 			<Wrapper>
-				<AvatarWrapper>
-					<Avatar width={36} height={36} source={image1} />
-				</AvatarWrapper>
+				<StoryAvatar width={36} height={36} source={image1} />
 				<Image source={image1} />
+				<Username>Anh Bạn Thảo</Username>
 			</Wrapper>
 		</Container>
 	);
