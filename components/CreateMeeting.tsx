@@ -31,7 +31,7 @@ export default function CreateMeeting() {
 						<MeetingAvatar width={40} height={40} source={image1} />
 					)
 				}
-				keyExtractor={(item: any) => item}
+				keyExtractor={(item: any) => `${item}`}
 			/>
 		</Container>
 	);

@@ -1,15 +1,30 @@
-import { Entypo, Feather } from '@expo/vector-icons';
+import {
+	Entypo,
+	EvilIcons,
+	Feather,
+	FontAwesome5,
+	Fontisto,
+} from '@expo/vector-icons';
 import React from 'react';
 import { image1 } from '../assets';
 import { Avatar } from '../styles/index.styles';
 import {
+	Action,
+	ActionText,
+	ActionWrapper,
 	Container,
 	Content,
 	HeaderWrapper,
 	IconsWrapper,
+	IconWrapper,
 	Image,
 	ImageWrapper,
-	Time,
+	LeftStatus,
+	RightStatus,
+	Separate,
+	StatusWrapper,
+	Text,
+	TimeWrapper,
 	TitleWrapper,
 	UserInfo,
 	Username,
@@ -24,13 +39,25 @@ export default function Post() {
 
 					<UserInfo>
 						<Username>Anh Bạn Thảo</Username>
-						<Time>2 hour</Time>
+						<TimeWrapper>
+							<Text>2 hour</Text>
+							<Entypo name="dot-single" size={12} color="lightslategrey" />
+							<Fontisto name="world-o" size={12} color="lightslategrey" />
+						</TimeWrapper>
 					</UserInfo>
 				</TitleWrapper>
 
 				<IconsWrapper>
-					<Entypo name="dots-three-horizontal" size={24} color="black" />
-					<Feather name="x" size={24} color="black" />
+					<IconWrapper>
+						<Entypo
+							name="dots-three-horizontal"
+							size={22}
+							color="lightslategrey"
+						/>
+					</IconWrapper>
+					<IconWrapper>
+						<Feather name="x" size={22} color="lightslategrey" />
+					</IconWrapper>
 				</IconsWrapper>
 			</HeaderWrapper>
 
@@ -44,6 +71,36 @@ export default function Post() {
 			<ImageWrapper>
 				<Image source={image1} />
 			</ImageWrapper>
+
+			<StatusWrapper>
+				<LeftStatus>
+					<EvilIcons name="like" size={22} color="lightslategrey" />
+					<ActionText style={{ marginLeft: 0 }}>Like</ActionText>
+				</LeftStatus>
+
+				<RightStatus>
+					<Text>18 comments</Text>
+					<Entypo name="dot-single" size={12} color="lightslategrey" />
+					<Text>18 shares</Text>
+				</RightStatus>
+			</StatusWrapper>
+
+			<Separate />
+
+			<ActionWrapper>
+				<Action>
+					<EvilIcons name="like" size={32} color="lightslategrey" />
+					<ActionText style={{ marginLeft: 0 }}>Like</ActionText>
+				</Action>
+				<Action>
+					<FontAwesome5 name="comment-alt" size={16} color="lightslategrey" />
+					<ActionText>Comment</ActionText>
+				</Action>
+				<Action>
+					<FontAwesome5 name="share-square" size={16} color="lightslategrey" />
+					<ActionText>Share</ActionText>
+				</Action>
+			</ActionWrapper>
 		</Container>
 	);
 }

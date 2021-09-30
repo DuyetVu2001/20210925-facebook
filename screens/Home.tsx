@@ -18,14 +18,15 @@ const Home = () => {
 				showsHorizontalScrollIndicator={false}
 				data={data}
 				renderItem={() => <Story />}
-				keyExtractor={(item: any) => item.id}
+				keyExtractor={(item: any) => `${item}`}
 			/>
 
-			<Posts>
-				<Post />
-				<Post />
-				<Post />
-			</Posts>
+			<Posts
+				showsHorizontalScrollIndicator={false}
+				data={data}
+				renderItem={() => <Post />}
+				keyExtractor={(item: any) => `${item}`}
+			/>
 		</Container>
 	);
 };

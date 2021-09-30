@@ -9,4 +9,4 @@ export const Stories = styled.FlatList`
 	background-color: #fff;
 `;
 
-export const Posts = styled.View``;
+export const Posts = styled.FlatList``;
