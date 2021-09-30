@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { topLg } from '../constants';
 
 const AlignItem = styled.View`
 	display: flex;
@@ -8,6 +9,7 @@ const AlignItem = styled.View`
 
 export const Container = styled.View`
 	display: flex;
+	margin-top: ${topLg};
 	background-color: #fff;
 `;
 

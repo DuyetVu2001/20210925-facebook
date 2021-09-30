@@ -2,7 +2,7 @@ import React from 'react';
 import CreatePost from '../components/CreatePost';
 import CreateMeeting from '../components/CreateMeeting';
 import Story from '../components/Story';
-import { Container, Stories } from './Home.style';
+import { Container, Posts, Stories } from './Home.style';
 import Post from '../components/Post';
 
 const Home = () => {
@@ -20,7 +20,12 @@ const Home = () => {
 				renderItem={() => <Story />}
 				keyExtractor={(item: any) => item.id}
 			/>
-			<Post />
+
+			<Posts>
+				<Post />
+				<Post />
+				<Post />
+			</Posts>
 		</Container>
 	);
 };

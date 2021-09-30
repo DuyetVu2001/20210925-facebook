@@ -1,9 +1,10 @@
 import styled from 'styled-components/native';
+import { topMd } from '../constants';
 import { Avatar } from '../styles/index.styles';
 
 export const Container = styled.View`
 	padding: 16px 0;
-	margin-top: 6px;
+	margin-top: ${topMd};
 	background-color: #fff;
 `;
 

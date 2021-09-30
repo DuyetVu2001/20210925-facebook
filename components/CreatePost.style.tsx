@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { pX, pY } from '../constants';
 
 export const Container = styled.View`
 	display: flex;
@@ -9,7 +10,7 @@ export const InputWrapper = styled.View`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 10px 16px;
+	padding: ${`${pY} ${pX}`};
 `;
 
 // FIX ASPECT IMAGE
@@ -26,7 +27,7 @@ export const TouchableOpacity = styled.TouchableOpacity`
 `;
 
 export const StatusText = styled.Text`
-	padding: 6px 16px;
+	padding: 8px 16px;
 `;
 
 export const Separate = styled.View`

@@ -1,15 +1,15 @@
 import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, View } from 'react-native';
 import { image1 } from './assets';
 import Home from './screens/Home';
 
 export default function App() {
 	return (
-		<View style={styles.container}>
+		<ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
 			<Home />
 			{/* <View style={styles.wrapper} />
 			<Image source={image1} style={styles.img} /> */}
-		</View>
+		</ScrollView>
 	);
 }
 
