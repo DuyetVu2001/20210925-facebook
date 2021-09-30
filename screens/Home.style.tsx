@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { topMd } from '../constants';
 
-export const Container = styled.View``;
+export const Container = styled.ScrollView``;
 
 export const Stories = styled.FlatList`
 	margin-top: ${topMd};

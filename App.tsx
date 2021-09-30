@@ -5,11 +5,11 @@ import Home from './screens/Home';
 
 export default function App() {
 	return (
-		<ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+		<View style={styles.container}>
 			<Home />
 			{/* <View style={styles.wrapper} />
 			<Image source={image1} style={styles.img} /> */}
-		</ScrollView>
+		</View>
 	);
 }
 
