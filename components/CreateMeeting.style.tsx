@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { topMd } from '../constants';
+import { pX, topMd } from '../constants';
 import { Avatar } from '../styles/index.styles';
 
 export const Container = styled.View`
@@ -11,6 +11,7 @@ export const Container = styled.View`
 export const Title = styled.Text`
 	font-weight: bold;
 	margin-bottom: 6px;
+	margin-left: ${pX};
 `;
 
 export const FlatList = styled.FlatList``;
@@ -24,6 +25,7 @@ export const ButtonWrapper = styled.View`
 	flex-direction: row;
 	align-items: center;
 	margin-right: 10px;
+	margin-left: ${pX};
 `;
 
 export const CreateButton = styled.Text`
