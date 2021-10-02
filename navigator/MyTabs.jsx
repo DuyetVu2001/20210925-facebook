@@ -8,6 +8,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import React from 'react';
 import { StatusBar } from 'react-native';
 import Home from '../screens/Home';
+import Notifications from '../screens/Notifications';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -37,7 +38,7 @@ export default function MyTabs() {
 						/>
 					),
 				}}
-				name="Settings"
+				name="Groups"
 				component={Home}
 			/>
 			<Tab.Screen
@@ -50,7 +51,7 @@ export default function MyTabs() {
 						/>
 					),
 				}}
-				name="Setting1"
+				name="Videos"
 				component={Home}
 			/>
 			<Tab.Screen
@@ -63,7 +64,7 @@ export default function MyTabs() {
 						/>
 					),
 				}}
-				name="Setting2"
+				name="Shopping"
 				component={Home}
 			/>
 			<Tab.Screen
@@ -76,8 +77,8 @@ export default function MyTabs() {
 						/>
 					),
 				}}
-				name="Setting4"
-				component={Home}
+				name="Notifications"
+				component={Notifications}
 			/>
 			<Tab.Screen
 				options={{
@@ -89,7 +90,7 @@ export default function MyTabs() {
 						/>
 					),
 				}}
-				name="Setting5"
+				name="Settings"
 				component={Home}
 			/>
 		</Tab.Navigator>
