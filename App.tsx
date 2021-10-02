@@ -1,15 +1,21 @@
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Image, ScrollView, StyleSheet, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { image1 } from './assets';
+import MyTabs from './navigator/MyTabs';
 import Home from './screens/Home';
 
 export default function App() {
 	return (
-		<View style={styles.container}>
-			<Home />
-			{/* <View style={styles.wrapper} />
-			<Image source={image1} style={styles.img} /> */}
-		</View>
+		<NavigationContainer>
+			<MyTabs />
+		</NavigationContainer>
+		// <View style={styles.container}>
+		// 	<Home />
+		// 	{/* <View style={styles.wrapper} />
+		// 	<Image source={image1} style={styles.img} /> */}
+		// </View>
 	);
 }
 

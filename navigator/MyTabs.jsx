@@ -1,0 +1,97 @@
+import {
+	AntDesign,
+	FontAwesome5,
+	MaterialCommunityIcons,
+	MaterialIcons,
+} from '@expo/vector-icons';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import React from 'react';
+import { StatusBar } from 'react-native';
+import Home from '../screens/Home';
+
+const Tab = createMaterialTopTabNavigator();
+
+export default function MyTabs() {
+	return (
+		<Tab.Navigator style={{ paddingTop: StatusBar.currentHeight }}>
+			<Tab.Screen
+				options={{
+					title: ({ color, focused }) => (
+						<AntDesign
+							name="home"
+							size={22}
+							color={focused ? 'blue' : 'gray'}
+						/>
+					),
+				}}
+				name="Home"
+				component={Home}
+			/>
+			<Tab.Screen
+				options={{
+					title: ({ color, focused }) => (
+						<MaterialIcons
+							name="group"
+							size={22}
+							color={focused ? 'blue' : 'gray'}
+						/>
+					),
+				}}
+				name="Settings"
+				component={Home}
+			/>
+			<Tab.Screen
+				options={{
+					title: ({ color, focused }) => (
+						<MaterialCommunityIcons
+							name="television-play"
+							size={22}
+							color={focused ? 'blue' : 'gray'}
+						/>
+					),
+				}}
+				name="Setting1"
+				component={Home}
+			/>
+			<Tab.Screen
+				options={{
+					title: ({ color, focused }) => (
+						<FontAwesome5
+							name="store"
+							size={18}
+							color={focused ? 'blue' : 'gray'}
+						/>
+					),
+				}}
+				name="Setting2"
+				component={Home}
+			/>
+			<Tab.Screen
+				options={{
+					title: ({ color, focused }) => (
+						<FontAwesome5
+							name="bell"
+							size={22}
+							color={focused ? 'blue' : 'gray'}
+						/>
+					),
+				}}
+				name="Setting4"
+				component={Home}
+			/>
+			<Tab.Screen
+				options={{
+					title: ({ color, focused }) => (
+						<MaterialIcons
+							name="menu"
+							size={26}
+							color={focused ? 'blue' : 'gray'}
+						/>
+					),
+				}}
+				name="Setting5"
+				component={Home}
+			/>
+		</Tab.Navigator>
+	);
+}
