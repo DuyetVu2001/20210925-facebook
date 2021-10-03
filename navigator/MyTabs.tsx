@@ -9,6 +9,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import Home from '../screens/Home';
 import Notifications from '../screens/Notifications';
+import Watch from '../screens/Watch';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -51,8 +52,8 @@ export default function MyTabs() {
 						/>
 					),
 				}}
-				name="Videos"
-				component={Home}
+				name="Watch"
+				component={Watch}
 			/>
 			<Tab.Screen
 				options={{
