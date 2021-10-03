@@ -7,6 +7,7 @@ import {
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import React from 'react';
 import { StatusBar } from 'react-native';
+import Group from '../screens/Group';
 import Home from '../screens/Home';
 import Notifications from '../screens/Notifications';
 import Watch from '../screens/Watch';
@@ -39,8 +40,8 @@ export default function MyTabs() {
 						/>
 					),
 				}}
-				name="Groups"
-				component={Home}
+				name="Group"
+				component={Group}
 			/>
 			<Tab.Screen
 				options={{
