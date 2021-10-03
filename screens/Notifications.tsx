@@ -1,14 +1,8 @@
-import { FontAwesome } from '@expo/vector-icons';
 import React from 'react';
+import HeaderScreen from '../components/HeaderScreen';
 import Notification from '../components/Notification';
-import {
-	Container,
-	FlatList,
-	Header,
-	IconWrapper,
-	Text,
-	Title,
-} from './Notifications.style';
+import { Container, FlatList, Text } from './Notifications.style';
+import { FontAwesome } from '@expo/vector-icons';
 
 export default function Notifications() {
 	const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -21,12 +15,10 @@ export default function Notifications() {
 				renderItem={({ index }) =>
 					index === 0 ? (
 						<>
-							<Header>
-								<Title>Notifications</Title>
-								<IconWrapper>
-									<FontAwesome name="search" size={20} color="black" />
-								</IconWrapper>
-							</Header>
+							<HeaderScreen
+								title="Notification"
+								icons={[<FontAwesome name="search" size={20} color="black" />]}
+							/>
 							<Text>Later</Text>
 							<Notification />
 						</>
